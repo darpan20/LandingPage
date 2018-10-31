@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.729 92.729">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_351" data-name="Group 351" transform="translate(-395 -743)">
+    <circle id="Ellipse_367" data-name="Ellipse 367" class="cls-1" cx="29.817" cy="29.817" r="29.817" transform="translate(412.047 760.047)"/>
+    <g id="Ellipse_368" data-name="Ellipse 368" class="cls-2" transform="translate(395 743)">
+      <circle class="cls-3" cx="46.365" cy="46.365" r="46.365"/>
+      <circle class="cls-4" cx="46.365" cy="46.365" r="44.865"/>
+    </g>
+  </g>
+</svg>

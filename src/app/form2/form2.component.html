@@ -1,0 +1,39 @@
+<div class="details">
+    <button  routerLink="/form" class="a1 btn btn-link" (click)=validationForm() style="text-decoration:none; color: black"><img src="/assets/images/done.svg" class="e1">&nbsp; &nbsp; &nbsp;Institute Details</button>
+    <img src="/assets/images/Line.png" class="line1">
+        <button class="a2 btn btn-link" routerLink="/form2" (click)=validationForm() style="text-decoration:none; color: black"><img src="/assets/images/e1.png" class="e2"><img src="/assets/images/2.png" class="n2">&nbsp; &nbsp; &nbsp;Your Details</button>
+        <img src="/assets/images/Line.png" class="line2">
+            <button class="s1 btn btn-link" routerLink="/form3" (click)=validationForm() style="text-decoration:none; color: black"><img src="/assets/images/e2.png" class="e3"><img src="/assets/images/3.png" class="n3">&nbsp; &nbsp; &nbsp;Create Node</button>
+</div>
+<div class="form"> 
+    <img src="/assets/images/body.png" alt="" class="body"> 
+    <div class="formcon">
+        <form name="myForm"  (click)=validationForm()>
+            <input type="text" id="yourname" class="name" placeholder="Your Name">
+            <p id="name1">*enter name</p>
+            <p id="name2">*length must be of min. 4</p>
+            <input type="text" class="mobileno" id="mobileno" placeholder="Your Mobile Number">
+          <p id="mobileno1">*enter Mobile Number</p>
+            <p id="mobileno2">*length must be of min. 10</p>
+            <input type="text" class="designation" id="designation" placeholder="Your Designation In Institute">
+            <p id="designation1">*enter Designation</p>
+            <p id="designation2">*length must be of min. 3</p>
+            <div class="b1 btn btn-light" routerLink="/form" value="prev"> < PREV</div>
+            <img src="/assets/images/Line.png" alt="" class="line">
+            <div (click)="file()"  class="b2 btn btn-light" value="front"><span id="l">+ Your Photo ID Front</span><span id="s">(Aadhar Card, Pan Card, or other ID)</span></div><p class="a">(Aadhar Card, Pan Card, or other ID)</p>
+            <div class="option" id="option">
+                <div class="option1" id="option1"><div class="rect"></div>
+                    <div class="vid"><video #video id="video" width="389" height="278" autoplay></video>
+                    <div class="snap" id="snap" (click)="capture()"><img src="/assets/images/circle1.svg" id="circle1" (click)="size()" class="circle1"></div></div>
+                    <canvas class="canvas" #canvas id="canvas" width="640" height="480"><img class="img" *ngFor="let c of captures" src="{{ c }}" height="50" style=" clip: rect(100x,100px,100px,100px);"/>   </canvas>
+
+                  </div>
+                <div class="option2"><img src="/assets/images/arrow1.svg" class="arrow1"><p style="text-align:center; font-size: 40px;">or<br>drop an image</p></div> 
+                <div class="close" id="close" (click)="close()"><p style="color:white;">x</p></div>
+            </div>
+            <div class="d1 btn btn-light" (click)="file()"  value="front"><span id="l">+ Your Photo ID Back</span><span id="s">(Aadhar Card, Pan Card, or other ID)</span></div><p class="b">(Aadhar Card, Pan Card, or other ID)</p>
+            <div class="s2 btn btn-light" (click)="file()"  value="front"><span id="l">+ Your Institution ID</span><span id="s">(Aadhar Card, Pan Card, or other ID)</span></div><p class="c">(Aadhar Card, Pan Card, or other ID)</p>
+            <div class="p1 btn btn-light"  id="abtn" routerLink="/form3" value="next">NEXT > </div>
+        </form>
+    </div>
+</div> 

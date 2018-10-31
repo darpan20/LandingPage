@@ -1,0 +1,121 @@
+.header{
+    left:0px;
+    right: 0px;
+    width: auto;
+    height: 75px;
+    position:absolute;
+    /* background-color: rgb(238, 39, 39); */
+    border-bottom: 1px solid #000;
+}
+.logo{
+    margin-top:-3px;
+    margin-left:-23px;
+    height: 60px;
+    width: 60px;
+    border-radius: 40px;
+    display: none;
+
+}
+.one{
+    width:230px;
+    padding-left: 40px;
+    padding-top: 10px;
+    font-size: 35px;;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    font-family: hirukopro-light;
+    background-color: #1E203C;
+    color:white;
+
+}
+.main-name{
+    position:absolute;
+    top:23px;
+    left:300px;
+    font-size: 20px;
+    transition: .5s;
+}
+.main-email{
+    position:absolute;
+    top:25px;
+    left:400px;
+    color:#707070;
+    font-size: 15px;
+    transition: .5s;
+}
+.institute{
+    position: absolute;
+    color:rgb(138, 59, 184);
+    top:23px;
+    transition: .3s;
+    left: 50vw;
+    font-size: 20px;
+    /* transition: .5s; */
+    /* margin-left: 800px; */
+}
+.logout{
+    position:absolute;
+    float: right;
+    font-size: 18px;
+    top: 25px;
+    right: 150px;
+    transition: .5s;
+}
+.profile{
+    position:absolute;
+    float: right; 
+    top: 15px;
+    position: relative;
+    height:50px;
+    right: 80px;
+    border-radius:30px;
+    box-shadow: 1px 1px 25px 1px #888888;
+    transition: .5s;
+    z-index: 1;;
+}
+@media screen and (max-width: 1440px){
+    .profile{
+        right: 80px;
+
+    }   
+}
+@media screen and (max-width: 1160px){
+    .main-email{
+        display: none;
+    }
+}
+@media screen and (max-width: 950px){
+    .main-name{
+        display: none;
+    }
+    .institute{
+        left:300px;
+    }
+    
+}
+@media screen and (max-width: 768px){
+    .institute{
+        left: 180px;
+    }
+    .one span{
+        display: none;
+    }
+    .logo{
+        display: block;
+    }
+    .one{
+        width:100px;
+        
+    
+    }
+    .logout{
+        float: left;
+        left: 580px;
+       }
+    .profile{
+        float: left; 
+        left: 650px;
+        }
+}
+

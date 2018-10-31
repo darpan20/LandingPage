@@ -1,0 +1,40 @@
+<div class="details">
+    <button  (click)="validateForm()" routerLink="/form" class="a1 btn btn-link" style="text-decoration:none; color: black"><img src="/assets/images/done.svg" class="e1">&nbsp; &nbsp; &nbsp;Institute Details</button>
+    <img src="/assets/images/Line.png" class="line1">
+        <button (click)="validateForm()" class="a2 btn btn-link"  routerLink="/form2" style="text-decoration:none; color: black"><img src="/assets/images/done.svg" class="e2">&nbsp; &nbsp; &nbsp;Your Details</button>
+        <img src="/assets/images/Line.png" class="line2">
+            <button (click)="validateForm()" class="s1 btn btn-link"  routerLink="/form3" style="text-decoration:none; color: black"><img src="/assets/images/e1.png" class="e3"><img src="/assets/images/3.png" class="n3">&nbsp; &nbsp; &nbsp;Create Node</button>
+</div>
+
+
+<div class="form">
+    <img src="/assets/images/body.png" alt="" class="body">
+    <div class="formcon">
+        <form name="myForm" (click)=validateForm()>
+            <input type="text" class="name" id="headname" placeholder="Name of Head of Institution">
+            <p id="hn1">*enter Head Name</p>
+            <p id="hn2" >*length must be min. 4</p>
+            <input type="text" class="designation" id="headmobileno" placeholder="Head Mobile Number">
+            <p id="hm1">*enter Head Mobile Number</p>
+            <p id="hm2" >*length must be min. 10</p>
+            <input type="text" class="mobileno" id="headdesignation" placeholder="Head Designation in Institute">
+            <p id="hd1">*enter Head Designation</p>
+            <p id="hd2" >*length must be min. 4</p>
+            <div class="j1 btn btn-light" routerLink="/form2" value="prev"> < PREV</div>
+            <img src="/assets/images/Line.png" alt="" class="line">
+            <div class="j2 btn btn-light" id="j2" (click)="file()" value="front"><span id="l">+ Your Photo ID Front</span><span id="s">(Aadhar Card, Pan Card, or other ID)</span></div><p class="a">(Aadhar Card, Pan Card, or other ID)</p>
+            <div class="option" id="option">
+                <div class="option1" id="option1"><div class="rect"></div>
+                    <div class="vid"><video #video id="video" width="389" height="278" autoplay></video>
+                    <div class="snap" id="snap" (click)="capture()"><img src="/assets/images/circle1.svg" id="circle1" (click)="size()" class="circle1"></div></div>
+                    <canvas class="canvas" #canvas id="canvas" width="640" height="480"><img class="img" *ngFor="let c of captures" src="{{ c }}" height="50" style=" clip: rect(100x,100px,100px,100px);"/>   </canvas>
+
+                  </div>
+                <div class="option2"><img src="/assets/images/arrow1.svg" class="arrow1"><p style="text-align:center; font-size: 40px;">or<br>drop an image</p></div> 
+                <div class="close" id="close" (click)="close()"><p style="color:white;">x</p></div>
+            </div>
+            <div class="m1 btn btn-light" id="finish" value="finish">FINISH > </div>
+        </form>
+    </div>
+</div>
+
